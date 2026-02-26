@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profileoverall">
+
+<div class="background">
+    <img src="{{ url_for('static', filename='melol.jpg') }}" alt="My Image">
+    <h2 class="screenname"> Dejone Watson</h2>
+    <h3>@djwato</h3>
+    <h3>Kingston, Jamaica</h3>
+    <h3>Joined {{ joined }}</h3>
+</div>
+<div class="profilecontent">
+    <p class="desc">I am a freshly 23 prospective software engineer. 
+        I'm family oriented and hate loud music. 
+        My favourite hobby is digital heart and I just keep falling into longer and longer Don't Starve playthroughs.
+        Even with these appealing distractions, I intend to maximize my grades in this intended final year~ ｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡
+    </p>
+    <div class="posts">
+        <h4>6</h4>
+        <h5>Posts</h5>
+    </div>
+    <div class="following">
+        <h4>172</h4>
+        <h5>Following</h5>
+    </div>
+    <div class="followers">
+        <h4>57</h4>
+        <h5>Followers</h5>
+    </div>
+    <button class="follow"> Follow </button>
+</div>
+</div>
+
+
+
+
+{% endblock %}
